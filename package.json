@@ -1,6 +1,5 @@
 {
-  "name": "react-header-small",
-  "private": true,
+  "name": "@nib-components/react-header-small",
   "dependencies": {
     "@nib-styles/header-small": "0.0.1",
     "@nib-styles/sass-breakpoints": "^1.0.2",
@@ -32,5 +31,18 @@
     "example.js.build": "browserify -v --debug -t babelify example/index.js -o example/index.bundled.js",
     "example.css.build": "sass-composer index.scss -o example/index.bundled.css",
     "example.build": "npm run build && npm run example.js.build && npm run example.css.build"
-  }
+  },
+  "description": "Micro header react component. Small green bar with nib logo.",
+  "version": "0.1.0",
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nib-components/react-header-small.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nib-components/react-header-small/issues"
+  },
+  "homepage": "https://github.com/nib-components/react-header-small#readme"
 }
