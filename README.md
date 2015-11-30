@@ -10,7 +10,7 @@ Micro header react component. Small green bar with nib logo.
 
     import React from 'react';
     import ReactDOM from 'react-dom';
-    import HeaderSmall from 'react-header-small';
+    import HeaderSmall from '@nib-components/react-header-small';
 
     ReactDOM.render(
       <HeaderSmall/>,
