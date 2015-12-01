@@ -1,4 +1,4 @@
-# react-header-small
+# @nib-components/react-header-small
 
 Micro header react component. Small green bar with nib logo.
 
