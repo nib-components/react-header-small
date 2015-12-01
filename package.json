@@ -33,7 +33,8 @@
     "example.build": "npm run build && npm run example.js.build && npm run example.css.build"
   },
   "description": "Micro header react component. Small green bar with nib logo.",
-  "version": "0.1.1",
+  "version": "0.1.2",
+  "main": "./dist/index.js",
   "directories": {
     "example": "example"
   },
