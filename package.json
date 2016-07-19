@@ -1,9 +1,5 @@
 {
   "name": "@nib-components/react-header-small",
-  "dependencies": {
-    "react": "^0.14.2",
-    "react-dom": "^0.14.2"
-  },
   "devDependencies": {
     "babel-core": "^6.1.21",
     "babel-plugin-transform-object-rest-spread": "^6.0.14",
@@ -12,10 +8,15 @@
     "babelify": "^7.2.0",
     "browserify": "^12.0.1",
     "browserify-incremental": "^3.0.1",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.2",
     "react-testutils-query": "^0.1.1",
     "react-testutils-render": "^0.1.1",
-    "readdir": "^0.0.13",
-    "sass-composer": "2.0.0-beta12"
+    "readdir": "^0.0.13"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0",
+    "react-dom": "^0.14.0 || ^15.0.0"
   },
   "browserify": {
     "transform": [
