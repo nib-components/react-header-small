@@ -34,6 +34,6 @@ HeaderSmall.propTypes = {
   className: React.PropTypes.string
 };
 
-HeaderSmall.propTypes = {
+HeaderSmall.defaultProps = {
   white: false
 };
