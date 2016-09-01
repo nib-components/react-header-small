@@ -37,12 +37,36 @@ import HeaderSmall from '@nib-components/react-header-small';
 ReactDOM.render(
   <div>
     <HeaderSmall/>
-    <HeaderSmall white />
-    <HeaderSmall white lhs={"Content on the Left"} rhs={"Content on the Right"} />
+    <HeaderSmall theme="white" />
+    <HeaderSmall theme="green" lhs={"Content on the Left"} rhs={"Content on the Right"} />
   </div>,
   document.querySelector('#app')
 );
 ```
+
+## Properties
+
+### theme
+
+The theme to use.
+
+`white` will give a white background with a green logo.
+
+`green` will give a green background with a white logo.
+
+Optional. A `string`.
+
+### lhs
+
+Content to appear on the left of the header
+
+Optional. A `node`.
+
+### rhs
+
+Content to appear on the right of the header
+
+Optional. A `node`.
 
 ## Change log
 
