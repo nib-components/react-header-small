@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/nib-components/react-header-small.git"
   },
+  "dependencies": {
+    "classnames": "^2.2.5"
+  },
   "devDependencies": {
     "babel-cli": "^6.8.0",
     "babel-plugin-transform-object-rest-spread": "^6.5.0",
@@ -32,8 +35,7 @@
     "clean": "rm -rf ./dist",
     "lint": "eslint ./src --ext .js,.jsx",
     "build:scripts": "babel ./src --source-maps --out-dir ./dist",
-    "watch:scripts": "npm run build -- --watch",
-    "build:styles": "cp ./src/*.scss ./dist",
+    "watch:scripts": "npm run build:scripts -- --watch",
     "build": "npm run build:scripts",
     "test": "mocha --compilers js:babel-register --require ./dist/_.test.js ./dist",
     "precommit": "npm run clean && npm run lint && npm run build && npm run test",
