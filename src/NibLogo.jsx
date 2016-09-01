@@ -11,7 +11,8 @@ export default function NibLogo(props) {
       viewBox="2.5 0.2 42 22"
       aria-labelledby="title"
       aria-describedby="desc"
-      role="img">
+      role="img"
+    >
       <title id="title">nib</title>
       <desc id="desc">nib logo</desc>
       <g id="nib-logo">
@@ -23,8 +24,6 @@ export default function NibLogo(props) {
     </svg>
   );
 }
-
-
 
 NibLogo.propTypes = {
   theme: React.PropTypes.oneOf(Object.keys(LOGO_THEME_COLORS))
