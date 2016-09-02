@@ -37,8 +37,8 @@ import HeaderSmall from '@nib-components/react-header-small';
 ReactDOM.render(
   <div>
     <HeaderSmall/>
-    <HeaderSmall theme="white" />
-    <HeaderSmall theme="queen-elizabeth" lhs={"Content on the Left"} rhs={"Content on the Right"} />
+    <HeaderSmall color="white" />
+    <HeaderSmall color="queen-elizabeth" lhs={"Content on the Left"} rhs={"Content on the Right"} />
   </div>,
   document.querySelector('#app')
 );
@@ -46,9 +46,9 @@ ReactDOM.render(
 
 ## Properties
 
-### theme
+### color
 
-The theme to use.
+The color to use.
 
 `white` will give a white background with a queen-elizabeth logo.
 
@@ -69,6 +69,11 @@ Content to appear on the right of the header
 Optional. A `node`.
 
 ## Change log
+
+### 0.1.5
+
+- feature: white theme `<HeaderSmall color="white"/>`
+- Uses @nib-components/Logo
 
 ### 0.1.4
 

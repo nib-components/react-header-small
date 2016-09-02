@@ -1,6 +1,6 @@
 {
   "name": "@nib-components/react-header-small",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Micro header react component. Small green bar with nib logo.",
   "main": "./dist/index.js",
   "repository": {
@@ -8,7 +8,7 @@
     "url": "git+https://github.com/nib-components/react-header-small.git"
   },
   "dependencies": {
-    "@nib-components/logo": "^0.1.1",
+    "@nib-components/logo": "^0.1.2",
     "classnames": "^2.2.5"
   },
   "devDependencies": {

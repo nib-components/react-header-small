@@ -1,16 +1,19 @@
 import React from 'react';
 import classnames from 'classnames';
 import Logo from '@nib-components/logo';
-import {HEADER_THEMES} from './constants';
+
+const VALID_COLOURS = [
+  'queen-elizabeth',
+  'white'
+];
 
 export default function HeaderSmall(props) {
   const headerClassNames = classnames('micro-header', 'grid', props.className, {
-    'micro-header--white': props.theme === HEADER_THEMES.white,
-    'micro-header--queen-elizabeth': props.theme === HEADER_THEMES.queenElizabeth
+    [`micro-header--${props.color}`]: props.color
   });
 
-  const logoColour = props.theme === HEADER_THEMES.white
-    ? 'queenElizabeth'
+  const logoColour = props.color === 'white'
+    ? 'queen-elizabeth'
     : 'white';
 
   return (
@@ -33,12 +36,12 @@ export default function HeaderSmall(props) {
 }
 
 HeaderSmall.propTypes = {
-  theme: React.PropTypes.oneOf(Object.keys(HEADER_THEMES)),
+  color: React.PropTypes.oneOf(VALID_COLOURS),
   lhs: React.PropTypes.node,
   rhs: React.PropTypes.node,
   className: React.PropTypes.string
 };
 
 HeaderSmall.defaultProps = {
-  theme: HEADER_THEMES.queenElizabeth
+  color: 'queen-elizabeth'
 };
