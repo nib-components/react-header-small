@@ -1,17 +1,17 @@
 import React from 'react';
 import classnames from 'classnames';
-import NibLogo from './NibLogo';
-import {LOGO_THEMES, HEADER_THEMES} from './constants';
+import Logo from '@nib-components/logo';
+import {HEADER_THEMES} from './constants';
 
 export default function HeaderSmall(props) {
   const headerClassNames = classnames('micro-header', 'grid', props.className, {
     'micro-header--white': props.theme === HEADER_THEMES.white,
-    'micro-header--green': props.theme === HEADER_THEMES.green
+    'micro-header--queen-elizabeth': props.theme === HEADER_THEMES.queenElizabeth
   });
 
-  const logoTheme = props.theme === HEADER_THEMES.white
-    ? LOGO_THEMES.green
-    : LOGO_THEMES.white;
+  const logoColour = props.theme === HEADER_THEMES.white
+    ? 'queenElizabeth'
+    : 'white';
 
   return (
     <div className={headerClassNames}>
@@ -23,8 +23,9 @@ export default function HeaderSmall(props) {
           id="ga-inlink-logo-homepage"
           title="nib Private Health Insurance"
         >
-          <NibLogo theme={logoTheme} />
+          <Logo color={logoColour} />
         </a>
+
       </div>
       <div className="grid__unit" g-xs="cols:2">{props.rhs}</div>
     </div>
@@ -39,5 +40,5 @@ HeaderSmall.propTypes = {
 };
 
 HeaderSmall.defaultProps = {
-  theme: HEADER_THEMES.green
+  theme: HEADER_THEMES.queenElizabeth
 };

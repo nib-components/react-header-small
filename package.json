@@ -8,6 +8,7 @@
     "url": "git+https://github.com/nib-components/react-header-small.git"
   },
   "dependencies": {
+    "@nib-components/logo": "^0.1.1",
     "classnames": "^2.2.5"
   },
   "devDependencies": {

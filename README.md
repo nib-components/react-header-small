@@ -1,6 +1,6 @@
 # @nib-components/react-header-small
 
-Micro header react component. Small green bar with nib logo.
+Micro header react component. Small queen-elizabeth bar with nib logo.
 
 ## Installation
 
@@ -38,7 +38,7 @@ ReactDOM.render(
   <div>
     <HeaderSmall/>
     <HeaderSmall theme="white" />
-    <HeaderSmall theme="green" lhs={"Content on the Left"} rhs={"Content on the Right"} />
+    <HeaderSmall theme="queen-elizabeth" lhs={"Content on the Left"} rhs={"Content on the Right"} />
   </div>,
   document.querySelector('#app')
 );
@@ -50,9 +50,9 @@ ReactDOM.render(
 
 The theme to use.
 
-`white` will give a white background with a green logo.
+`white` will give a white background with a queen-elizabeth logo.
 
-`green` will give a green background with a white logo.
+`queen-elizabeth` will give a queen-elizabeth background with a white logo.
 
 Optional. A `string`.
 
